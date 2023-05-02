@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TESI</title>
+        <link rel="stylesheet" href="CSS/navbar.css">
+        <link rel="stylesheet" href="CSS/select.css">
+
+    </head>
+
+    <body>
+
+    <section>
+      <nav>
+          <ul id="navbar">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="form.html">Coordinar Cita</a></li>
+              <li><a href="contact.html">Contactanos</a></li>
+          </ul>
+          <div class="hamburger" onclick="toggleNavbar()">
+                &#9776;
+          </div>
+      </nav>
+    </section>
+
+    <section id="section1">
+
+        <article class="container">
+            <h3>212 (TESI) - Laboratorio de Computadoras</h3>
+
+                <p class="description">El laboratorio de computadoras<br>
+                ofrece un ambiente tecnologico con computadoras aptas para
+                el <br>contenido practico de las clases <br>de tecnologia que se adiestran.<br>
+
+                Personal: Prof. Pizarro, Prof. De Jesus
+                </p>
+
+        </article>
+    
+        <div class="imagen">
+          <img src="mapas/TESI/212.png" onclick="enlargeImage('mapas/TESI/212.png')">
+        </div>
+
+  </section>
+  
+  <section id="section2">
+      <article class="container">
+
+        <h3>301 (TESI) - Laboratorio de Reparacion de Moviles</h3>
+      <p class="description">El laboratorio de reparacion de equipos moviles<br>
+      contiene las herramientas necesarias para que el estudiante <br>pueda tener
+      una experiencia real al reparar un equipo movil. <br>Ademas, se encuentra
+      equipado con mesas de trabajo especiales para brindar mayor <br>comodidad al estudiante al momento de
+      realizar tareas practicas.<br><br>Personal: Prof. De Jesus
+      </p>
+      </article>
+
+      <div class="imagen">
+        <img src="mapas/TESI/301.png" onclick="enlargeImage('mapas/TESI/301.png')">
+      </div>
+
+    </section>
+    
+  
+    <section id="section3">
+
+      <article class="container">
+
+        <h3>308 (TESI) - Laboratorio de Redes</h3>
+        <p class="description">El laboratorio de redes posee el equipamiento necesario para que el estudiante <br>pueda desarrollar sus conocimientos en el campo de la administracion de una red de informacion.
+        <br><br>Personal: Prof. De Jesus</p>
+      </article>
+
+      <div class="imagen">
+        <img src="mapas/TESI/308.png" onclick="enlargeImage('image/308.png')">
+      </div>
+
+      <div class="enlarged-image" id="enlargedImageContainer">
+        <span onclick="closeEnlargedImage()" style="cursor: pointer; position: absolute; top: 20px; right: 20px; font-size: 24px; color: #fff;">&times;</span>
+        <img id="enlargedImage" src="">
+      </div>
+
+    </section>
+
+    <script src="JS/hamburger.js"></script>
+    <script src="JS/popup.js"></script>
+    </body>
+</html>

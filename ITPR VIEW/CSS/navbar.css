@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added to include border and padding in element's total width and height */
+}
+
+nav {
+    background-color: #284c64;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center; /* Added this property to center items vertically */
+    text-align: center;
+	list-style-type: none;
+}
+
+li {
+    padding: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #ebebeb;
+    min-width: 80px;
+    margin: 0.5rem;
+    text-align: center; /* Added to center the text in each list item */
+}
+
+li:hover {
+    background-color: lightblue;
+    background-size: 100% 100%;
+    color: #27262c;
+    animation: spring 300ms ease-out;
+    text-shadow: 0 -1px 0 royalblue;
+    font-weight: bold;
+}
+
+a {
+    color: #ebebeb;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: lightblue;
+    background-size: 100% 100%;
+    color: #27262c;
+    animation: spring 300ms ease-out;
+    text-shadow: 0 -1px 0 royalblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 1rem;
+    color: #ebebeb;
+    font-size: 24px; /* Increased font size for the hamburger icon */
+    background-color: #284c64;
+}
+
+@media screen and (max-width: 768px) {
+    ul {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        text-align: left;
+		display: none;
+		list-style-type: none;
+        padding-left: 1rem; /* Added padding-left to separate the first list item from the left edge of the screen */
+    }
+
+    li {
+        min-width: auto;
+        margin: 0 0.5rem;
+        padding: 0.5rem; 
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon in responsive view */
+    }
+}

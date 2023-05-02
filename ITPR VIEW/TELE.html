@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ingeniaria Electrica</title>
+        <link rel="stylesheet" href="CSS/navbar.css">
+        <link rel="stylesheet" href="CSS/select.css">
+
+    </head>
+
+    <body>
+
+    <section>
+      <nav>
+          <ul id="navbar">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="form.html">Coordinar Cita</a></li>
+              <li><a href="contact.html">Contactanos</a></li>
+          </ul>
+          <div class="hamburger" onclick="toggleNavbar()">
+                &#9776;
+          </div>
+      </nav>
+    </section>
+
+    <section id="section1">
+
+        <article class="container">
+            <h3>316 (TELE) Ingeniaria Electrica</h3>
+
+                <p class="description">--------------------------------<br>
+                ---------------------------------------------------------
+                ----<br>---------------------------------<br>--------------------------<br><br>
+
+                Personal: --------------------------------
+                </p>
+
+        </article>
+    
+        <div class="imagen">
+          <img src="mapas/TELE/316.png" onclick="enlargeImage('mapas/TELE/316.png')">
+        </div>
+
+  </section>
+  
+  <section id="section2">
+      <article class="container">
+
+        <h3>317 (TELE) Ingeniaria Electrica</h3>
+      <p class="description">------------------------------------------------<br>
+      --------------------------------------------------------------<br>---------
+      --------------------------------------------------<br>----------------------
+      -----------------------------------------------------------<br>--------------
+      ----------------------------<br><br>Personal: ---------------
+      </p>
+      </article>
+
+      <div class="imagen">
+        <img src="mapas/TELE/317.png" onclick="enlargeImage('mapas/TELE/317.png')">
+      </div>
+    
+      <div class="enlarged-image" id="enlargedImageContainer">
+        <span onclick="closeEnlargedImage()" style="cursor: pointer; position: absolute; top: 20px; right: 20px; font-size: 24px; color: #fff;">&times;</span>
+        <img id="enlargedImage" src="">
+      </div>
+
+    </section>
+
+    <script src="JS/hamburger.js"></script>
+    <script src="JS/popup.js"></script>
+    </body>
+</html>
